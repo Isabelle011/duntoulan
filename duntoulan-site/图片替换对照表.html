@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>墩头蓝网站 · 图片替换对照表</title>
+<style>
+:root{--navy:#1d3e5e;--indigo:#2f6392;--gold:#b9905f;--muted:#71818f;--bg:#f4f7fb}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:#24384c;line-height:1.8;font-size:15px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header{background:var(--navy);color:#fff;padding:38px 0}
+header h1{font-size:26px;letter-spacing:2px;margin-bottom:6px}
+header p{font-size:14px;color:rgba(255,255,255,.75)}
+.steps{background:#fff;border-radius:10px;padding:26px 30px;margin:32px 0;box-shadow:0 6px 20px rgba(29,62,94,.08)}
+.steps h2{font-size:18px;color:var(--navy);margin-bottom:14px}
+.steps ol{padding-left:22px}
+.steps li{margin-bottom:8px}
+.steps code{background:#eef4fa;color:#1d3e5e;padding:2px 7px;border-radius:4px;font-size:13.5px}
+.tip{background:#eef4fa;border-left:4px solid var(--indigo);padding:12px 16px;border-radius:0 6px 6px 0;font-size:14px;margin-top:16px}
+h2.sec{font-size:20px;color:var(--navy);margin:38px 0 16px;letter-spacing:1px;border-left:4px solid var(--gold);padding-left:12px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 14px rgba(29,62,94,.07)}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#dbe7f3}
+.card .b{padding:12px 14px 16px}
+.card .fn{font-family:Consolas,monospace;font-size:12.5px;color:#1d3e5e;background:#eef4fa;padding:2px 6px;border-radius:4px;display:inline-block;margin-bottom:6px;word-break:break-all}
+.card .use{font-size:12.5px;color:var(--gold);margin-bottom:2px}
+.card .desc{font-size:13px;color:#4a5d70}
+.card .size{font-size:12px;color:var(--muted);margin-top:4px}
+@media (max-width:960px){.grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>图片替换对照表</h1>
+    <p>墩头蓝网站 · 找到要换的那张，用同名文件覆盖即可，不用改代码</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="steps">
+    <h2>换图三步走</h2>
+    <ol>
+      <li>打开文件夹 <code>duntoulan-site\images</code>（所有图片都在这里，共 60 张）</li>
+      <li>在下面的对照表里找到要换的图，记下文件名，例如 <code>hero-banner.jpg</code></li>
+      <li>把你的照片改成<strong>一模一样的文件名</strong>（注意 <code>.jpg</code> 后缀要一致），拖进文件夹，选择“替换目标中的文件” → 网页刷新即生效</li>
+    </ol>
+    <div class="tip">
+      <strong>三点提醒：</strong>① 尺寸不用严格照搬，但比例要接近，否则画面会被裁切；② 手机直出照片通常是竖图，建议横图栏目用横拍或先裁剪；③ 保存为 JPG，质量 80% 左右即可，单张别超过 1MB，网页更快。
+    </div>
+  </div>
+
+  <h2 class="sec">首页 index.html</h2>
+  <div class="grid">
+    <div class="card"><img src="images/hero-banner.jpg" alt=""><div class="b"><span class="fn">hero-banner.jpg</span><div class="use">首屏大图（最重要）</div><div class="desc">建议用最有氛围感的横幅：晾晒的蓝布、染缸、工坊全景。左侧要放白色文字，最好选左半部分比较简洁的照片。</div><div class="size">建议 1600×700 以上 · 横图</div></div></div>
+    <div class="card"><img src="images/culture-intro.jpg" alt=""><div class="b"><span class="fn">culture-intro.jpg</span><div class="use">文化简介配图</div><div class="desc">能体现技艺的作品或场景：一匹成品蓝布、老人织布的手部特写。</div><div class="size">建议约 5:4 · 900×720</div></div></div>
+    <div class="card"><img src="images/work-01.jpg" alt=""><div class="b"><span class="fn">work-01.jpg</span><div class="use">作品卡 1 · 扎染围巾</div><div class="desc">围巾平铺或佩戴效果图。</div><div class="size">建议 4:3.4 · 600×510</div></div></div>
+    <div class="card"><img src="images/work-02.jpg" alt=""><div class="b"><span class="fn">work-02.jpg</span><div class="use">作品卡 2 · 蓝染布艺</div><div class="desc">布艺小物、杯垫、桌旗等。</div><div class="size">建议 4:3.4 · 600×510</div></div></div>
+    <div class="card"><img src="images/work-03.jpg" alt=""><div class="b"><span class="fn">work-03.jpg</span><div class="use">作品卡 3 · 扎染服饰</div><div class="desc">蓝染服装上身照。</div><div class="size">建议 4:3.4 · 600×510</div></div></div>
+    <div class="card"><img src="images/work-04.jpg" alt=""><div class="b"><span class="fn">work-04.jpg</span><div class="use">作品卡 4 · 蓝染抱枕</div><div class="desc">家居场景中的抱枕。</div><div class="size">建议 4:3.4 · 600×510</div></div></div>
+    <div class="card"><img src="images/work-05.jpg" alt=""><div class="b"><span class="fn">work-05.jpg</span><div class="use">作品卡 5 · 蓝白桌旗</div><div class="desc">茶席、长桌铺陈效果。</div><div class="size">建议 4:3.4 · 600×510</div></div></div>
+    <div class="card"><img src="images/news-01.jpg" alt=""><div class="b"><span class="fn">news-01.jpg</span><div class="use">新闻卡 1 配图</div><div class="desc">“进校园”活动照：学生扎布、染缸前的场景。</div><div class="size">建议 16:10 · 800×500</div></div></div>
+    <div class="card"><img src="images/news-02.jpg" alt=""><div class="b"><span class="fn">news-02.jpg</span><div class="use">新闻卡 2 配图</div><div class="desc">展览现场：悬挂的蓝布、展墙。</div><div class="size">建议 16:10 · 800×500</div></div></div>
+    <div class="card"><img src="images/news-03.jpg" alt=""><div class="b"><span class="fn">news-03.jpg</span><div class="use">新闻卡 3 配图</div><div class="desc">体验课现场：工作台、染缸、成品。</div><div class="size">建议 16:10 · 800×500</div></div></div>
+  </div>
+
+  <h2 class="sec">墩头蓝文化 culture.html</h2>
+  <div class="grid">
+    <div class="card"><img src="images/origin.jpg" alt=""><div class="b"><span class="fn">origin.jpg</span><div class="use">技艺源流配图</div><div class="desc">村景、老屋、老染缸，讲“从墩头村到蓝染”。</div><div class="size">建议约 5:4 · 900×720</div></div></div>
+    <div class="card"><img src="images/genre-01.jpg" alt=""><div class="b"><span class="fn">genre-01.jpg</span><div class="use">地域流派 1 · 和平墩头村</div><div class="desc">墩头村本地场景。</div><div class="size">建议 4:3 · 600×450</div></div></div>
+    <div class="card"><img src="images/genre-02.jpg" alt=""><div class="b"><span class="fn">genre-02.jpg</span><div class="use">地域流派 2 · 东江流域</div><div class="desc">江边、水系相关的蓝染场景。</div><div class="size">建议 4:3 · 600×450</div></div></div>
+    <div class="card"><img src="images/genre-03.jpg" alt=""><div class="b"><span class="fn">genre-03.jpg</span><div class="use">地域流派 3 · 客家聚居地</div><div class="desc">围屋、墟市、客家生活场景。</div><div class="size">建议 4:3 · 600×450</div></div></div>
+    <div class="card"><img src="images/pattern-big.jpg" alt=""><div class="b"><span class="fn">pattern-big.jpg</span><div class="use">纹样寓意 · 团花纹大图</div><div class="desc">一张团花纹（圆形放射纹样）的清晰特写，正方形最好。</div><div class="size">正方形 · 700×700</div></div></div>
+  </div>
+
+  <h2 class="sec">工艺流程 process.html</h2>
+  <div class="grid">
+    <div class="card"><img src="images/journey.jpg" alt=""><div class="b"><span class="fn">journey.jpg</span><div class="use">蓝色旅程配图</div><div class="desc">白布到蓝布的过程感画面：晾绳、染缸、手部动作。</div><div class="size">建议 4:3 · 800×600</div></div></div>
+    <div class="card"><img src="images/process-01.jpg" alt=""><div class="b"><span class="fn">process-01.jpg</span><div class="use">步骤 01 · 设计纹样</div><div class="desc">画稿、设计纹样的手部特写。</div><div class="size">建议 3:2 · 720×480</div></div></div>
+    <div class="card"><img src="images/process-02.jpg" alt=""><div class="b"><span class="fn">process-02.jpg</span><div class="use">步骤 02 · 折叠捆扎</div><div class="desc">缝扎、捆线的过程。</div><div class="size">建议 3:2 · 720×480</div></div></div>
+    <div class="card"><img src="images/process-03.jpg" alt=""><div class="b"><span class="fn">process-03.jpg</span><div class="use">步骤 03 · 蓝靛染色</div><div class="desc">布入染缸、搅拌的瞬间。</div><div class="size">建议 3:2 · 720×480</div></div></div>
+    <div class="card"><img src="images/process-04.jpg" alt=""><div class="b"><span class="fn">process-04.jpg</span><div class="use">步骤 04 · 晾晒氧化</div><div class="desc">晾绳上的蓝布、阳光下晾晒。</div><div class="size">建议 3:2 · 720×480</div></div></div>
+    <div class="card"><img src="images/process-05.jpg" alt=""><div class="b"><span class="fn">process-05.jpg</span><div class="use">步骤 05 · 拆线成纹</div><div class="desc">拆线瞬间、纹样揭晓的特写。</div><div class="size">建议 3:2 · 720×480</div></div></div>
+    <div class="card"><img src="images/tool-01.jpg" alt=""><div class="b"><span class="fn">tool-01.jpg</span><div class="use">工具 1 · 白棉坯布</div><div class="desc">成卷/叠好的白坯布。</div><div class="size">建议 500×380</div></div></div>
+    <div class="card"><img src="images/tool-02.jpg" alt=""><div class="b"><span class="fn">tool-02.jpg</span><div class="use">工具 2 · 植物蓝靛</div><div class="desc">蓝靛、染液、植物的特写。</div><div class="size">建议 500×380</div></div></div>
+    <div class="card"><img src="images/tool-03.jpg" alt=""><div class="b"><span class="fn">tool-03.jpg</span><div class="use">工具 3 · 棉线绳具</div><div class="desc">线团、针线、捆扎工具的静物。</div><div class="size">建议 500×380</div></div></div>
+    <div class="card"><img src="images/tool-04.jpg" alt=""><div class="b"><span class="fn">tool-04.jpg</span><div class="use">工具 4 · 染缸木桶</div><div class="desc">染缸、木桶、工坊一角。</div><div class="size">建议 500×380</div></div></div>
+  </div>
+
+  <h2 class="sec">作品展示 works.html</h2>
+  <div class="grid">
+    <div class="card"><img src="images/featured-works.jpg" alt=""><div class="b"><span class="fn">featured-works.jpg</span><div class="use">精选单品大图</div><div class="desc">本期主推作品（如团花桌旗）的场景大图，最能撑场面的一张。</div><div class="size">建议 4:3 · 900×680</div></div></div>
+    <div class="card"><img src="images/series-01.jpg" alt=""><div class="b"><span class="fn">series-01.jpg</span><div class="use">作品系列 1 · 扎染围巾</div><div class="desc">围巾作品图。</div><div class="size">建议 4:3 · 600×450</div></div></div>
+    <div class="card"><img src="images/series-02.jpg" alt=""><div class="b"><span class="fn">series-02.jpg</span><div class="use">作品系列 2 · 蓝染布艺</div><div class="desc">布艺小物作品图。</div><div class="size">建议 4:3 · 600×450</div></div></div>
+    <div class="card"><img src="images/series-03.jpg" alt=""><div class="b"><span class="fn">series-03.jpg</span><div class="use">作品系列 3 · 扎染长衫</div><div class="desc">服装类作品图。</div><div class="size">建议 4:3 · 600×450</div></div></div>
+    <div class="card"><img src="images/series-04.jpg" alt=""><div class="b"><span class="fn">series-04.jpg</span><div class="use">作品系列 4 · 蓝白抱枕</div><div class="desc">抱枕作品图。</div><div class="size">建议 4:3 · 600×450</div></div></div>
+    <div class="card"><img src="images/series-05.jpg" alt=""><div class="b"><span class="fn">series-05.jpg</span><div class="use">作品系列 5 · 茶席桌旗</div><div class="desc">桌旗作品图。</div><div class="size">建议 4:3 · 600×450</div></div></div>
+    <div class="card"><img src="images/series-06.jpg" alt=""><div class="b"><span class="fn">series-06.jpg</span><div class="use">作品系列 6 · 文创帆布包</div><div class="desc">帆布包作品图。</div><div class="size">建议 4:3 · 600×450</div></div></div>
+    <div class="card"><img src="images/series-07.jpg" alt=""><div class="b"><span class="fn">series-07.jpg</span><div class="use">作品系列 7 · 蓝染挂画</div><div class="desc">挂画/装饰布作品图。</div><div class="size">建议 4:3 · 600×450</div></div></div>
+    <div class="card"><img src="images/series-08.jpg" alt=""><div class="b"><span class="fn">series-08.jpg</span><div class="use">作品系列 8 · 扎染方巾</div><div class="desc">方巾作品图。</div><div class="size">建议 4:3 · 600×450</div></div></div>
+  </div>
+
+  <h2 class="sec">文创产品 shop.html</h2>
+  <div class="grid">
+    <div class="card"><img src="images/shop-intro.jpg" alt=""><div class="b"><span class="fn">shop-intro.jpg</span><div class="use">系列宣传大图</div><div class="desc">“蓝白山水系列”整体陈列图。</div><div class="size">建议 4:3 · 800×620</div></div></div>
+    <div class="card"><img src="images/product-01.jpg" alt=""><div class="b"><span class="fn">product-01.jpg</span><div class="use">商品 1 · 扎染桌布</div><div class="desc">商品白底或场景图。</div><div class="size">正方形 · 600×600</div></div></div>
+    <div class="card"><img src="images/product-02.jpg" alt=""><div class="b"><span class="fn">product-02.jpg</span><div class="use">商品 2 · 蓝染桌旗</div><div class="desc">商品白底或场景图。</div><div class="size">正方形 · 600×600</div></div></div>
+    <div class="card"><img src="images/product-03.jpg" alt=""><div class="b"><span class="fn">product-03.jpg</span><div class="use">商品 3 · 文创托特包</div><div class="desc">商品白底或场景图。</div><div class="size">正方形 · 600×600</div></div></div>
+    <div class="card"><img src="images/product-04.jpg" alt=""><div class="b"><span class="fn">product-04.jpg</span><div class="use">商品 4 · 扎染抱枕</div><div class="desc">商品白底或场景图。</div><div class="size">正方形 · 600×600</div></div></div>
+    <div class="card"><img src="images/product-05.jpg" alt=""><div class="b"><span class="fn">product-05.jpg</span><div class="use">商品 5 · 蓝染挂画</div><div class="desc">商品白底或场景图。</div><div class="size">正方形 · 600×600</div></div></div>
+    <div class="card"><img src="images/product-06.jpg" alt=""><div class="b"><span class="fn">product-06.jpg</span><div class="use">商品 6 · 手作礼盒</div><div class="desc">礼盒整体展示图。</div><div class="size">正方形 · 600×600</div></div></div>
+    <div class="card"><img src="images/product-07.jpg" alt=""><div class="b"><span class="fn">product-07.jpg</span><div class="use">商品 7 · 扎染杯垫</div><div class="desc">商品白底或场景图。</div><div class="size">正方形 · 600×600</div></div></div>
+    <div class="card"><img src="images/product-08.jpg" alt=""><div class="b"><span class="fn">product-08.jpg</span><div class="use">商品 8 · 扎染束口袋</div><div class="desc">商品白底或场景图。</div><div class="size">正方形 · 600×600</div></div></div>
+  </div>
+
+  <h2 class="sec">体验课程 courses.html</h2>
+  <div class="grid">
+    <div class="card"><img src="images/course-hero.jpg" alt=""><div class="b"><span class="fn">course-hero.jpg</span><div class="use">手作现场配图</div><div class="desc">课堂现场：学员围坐、老师指导、染缸在前。</div><div class="size">建议约 5:4 · 900×720</div></div></div>
+    <div class="card"><img src="images/course-01.jpg" alt=""><div class="b"><span class="fn">course-01.jpg</span><div class="use">课程类型 1 · 亲子体验</div><div class="desc">家长与孩子一起扎染。</div><div class="size">建议 4:3 · 600×450</div></div></div>
+    <div class="card"><img src="images/course-02.jpg" alt=""><div class="b"><span class="fn">course-02.jpg</span><div class="use">课程类型 2 · 研学实践</div><div class="desc">学生团体上课场景。</div><div class="size">建议 4:3 · 600×450</div></div></div>
+    <div class="card"><img src="images/course-03.jpg" alt=""><div class="b"><span class="fn">course-03.jpg</span><div class="use">课程类型 3 · 成人手作</div><div class="desc">成人课程、作品特写。</div><div class="size">建议 4:3 · 600×450</div></div></div>
+    <div class="card"><img src="images/scene-01.jpg" alt=""><div class="b"><span class="fn">scene-01.jpg</span><div class="use">场景图 1 · 研学</div><div class="desc">校园/研学活动照。</div><div class="size">建议 500×380</div></div></div>
+    <div class="card"><img src="images/scene-02.jpg" alt=""><div class="b"><span class="fn">scene-02.jpg</span><div class="use">场景图 2 · 团建</div><div class="desc">企业团建活动照。</div><div class="size">建议 500×380</div></div></div>
+    <div class="card"><img src="images/scene-03.jpg" alt=""><div class="b"><span class="fn">scene-03.jpg</span><div class="use">场景图 3 · 市集</div><div class="desc">文创市集摊位照。</div><div class="size">建议 500×380</div></div></div>
+    <div class="card"><img src="images/scene-04.jpg" alt=""><div class="b"><span class="fn">scene-04.jpg</span><div class="use">场景图 4 · 展览</div><div class="desc">展览、活动现场照。</div><div class="size">建议 500×380</div></div></div>
+  </div>
+
+  <h2 class="sec">新闻资讯 news.html</h2>
+  <div class="grid">
+    <div class="card"><img src="images/headline.jpg" alt=""><div class="b"><span class="fn">headline.jpg</span><div class="use">头条大图</div><div class="desc">最重要的那条新闻配图，建议用展览/活动大场景。</div><div class="size">建议 16:11 · 860×590</div></div></div>
+    <div class="card"><img src="images/article-01.jpg" alt=""><div class="b"><span class="fn">article-01.jpg</span><div class="use">资讯卡 1 配图</div><div class="desc">对应第一条资讯的照片。</div><div class="size">建议 16:10 · 640×400</div></div></div>
+    <div class="card"><img src="images/article-02.jpg" alt=""><div class="b"><span class="fn">article-02.jpg</span><div class="use">资讯卡 2 配图</div><div class="desc">对应第二条资讯的照片。</div><div class="size">建议 16:10 · 640×400</div></div></div>
+    <div class="card"><img src="images/article-03.jpg" alt=""><div class="b"><span class="fn">article-03.jpg</span><div class="use">资讯卡 3 配图</div><div class="desc">对应第三条资讯的照片。</div><div class="size">建议 16:10 · 640×400</div></div></div>
+    <div class="card"><img src="images/article-04.jpg" alt=""><div class="b"><span class="fn">article-04.jpg</span><div class="use">资讯卡 4 配图</div><div class="desc">对应第四条资讯的照片。</div><div class="size">建议 16:10 · 640×400</div></div></div>
+    <div class="card"><img src="images/article-05.jpg" alt=""><div class="b"><span class="fn">article-05.jpg</span><div class="use">资讯卡 5 配图</div><div class="desc">对应第五条资讯的照片。</div><div class="size">建议 16:10 · 640×400</div></div></div>
+    <div class="card"><img src="images/article-06.jpg" alt=""><div class="b"><span class="fn">article-06.jpg</span><div class="use">资讯卡 6 配图</div><div class="desc">对应第六条资讯的照片。</div><div class="size">建议 16:10 · 640×400</div></div></div>
+  </div>
+
+  <h2 class="sec">联系我们 contact.html</h2>
+  <div class="grid">
+    <div class="card"><img src="images/contact-hero.jpg" alt=""><div class="b"><span class="fn">contact-hero.jpg</span><div class="use">开场配图</div><div class="desc">工坊外观、招牌、有人在染布的场景。</div><div class="size">建议约 5:4 · 900×640</div></div></div>
+    <div class="card"><img src="images/visit.jpg" alt=""><div class="b"><span class="fn">visit.jpg</span><div class="use">到访指引配图</div><div class="desc">村口、工坊门面、导视牌等“怎么找到我们”的照片。</div><div class="size">建议 800×620</div></div></div>
+  </div>
+
+  <div class="steps" style="margin-top:40px">
+    <h2>还有两个特殊文件</h2>
+    <p style="margin-bottom:10px"><code>images/logo.png</code> —— 导航栏左上角的方形徽标（已用你们提供的 logo 裁好，换的话建议方形、透明底）</p>
+    <p><code>images/logo-full.png</code> —— 原始完整 logo（含“河源墩头蓝”字样），留档备用，一般不用动</p>
+  </div>
+
+</div>
+</body>
+</html>
